@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ChooseDate.min.css"/>
+    <style>
+        *{margin:0;padding:0;}
+        input:nth-child(1){
+            width:300px;
+            height:34px;
+            margin:100px;
+        }
+        input:nth-child(2){
+            width:300px;
+            height:34px;
+            margin:100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"  onClick="DateChoose({type:'YY-MM'});"/>
+    <input type="text"  onClick="DateChoose({type:'YY-MM'});"/>
+    <div>
+        <input type="text" onClick="DateChoose({type:'hh-mm'});"/>
+        <input type="text" onClick="DateChoose({type:'hh-mm'});"/>
+    </div>
+    <div>
+        <input type="text" onClick="DateChoose({type:'YY-MM-DD'});"/>
+        <input type="text" onClick="DateChoose({type:'YY-MM-DD'});"/>
+    </div>
+
+</body>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="jQuery.DateChoose.min.js"></script>
+</html>
